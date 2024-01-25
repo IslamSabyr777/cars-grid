@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+    /* 
+        font-family: 'Poppins', sans-serif; 
+        font-family: 'Ubuntu', sans-serif;
+    */
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+
+        header {
+            grid-column: span 3;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            border-bottom: 1px solid #cdcdcd;
+            background-color: #1a1d26;
+            color: #cdcdcd;
+        }
+
+        nav {
+            padding: 30px;
+            border-right: 1px solid #cdcdcd;
+        }
+
+        nav p {
+            font-size: 1.5rem;
+            font-family: 'Ubuntu', sans-serif;;
+        }
+
+        nav li {
+            list-style: none;
+            padding-bottom: 5px;
+            padding-left: 6px;
+            text-decoration: underline;
+        }
+
+        article > .main-text {
+            font-size: 5rem;
+            font-weight: bold;
+            padding: 25px 0px;
+            margin-left: 10%;
+            margin-bottom: 50px;
+        }
+
+        article > img {
+            width: 80%;
+            margin-left: 10%;
+        }   
+
+        article > p {
+            font-size: 1.1rem;
+            font-family: 'Ubuntu', sans-serif;
+            line-height: 1.8rem;
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 50px;
+        }
+
+        aside {
+            border-left: 1px solid #cdcdcd;
+            padding: 30px;
+        }
+
+        aside > p > strong {
+            font-size: 1.3rem;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        aside p {
+            font-family: 'Poppins', sans-serif; 
+            margin-bottom: 45px;
+        }
+
+        footer {
+            background-color: #1a1d26;
+            color: #cdcdcd;
+            grid-column: span 3;
+            border-top: 1px solid #cdcdcd;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        @media (max-width: 1650px) {
+            article > .main-text {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 1100px) {
+            nav {
+                grid-column: span 3;
+                border-right: 0;
+                border-bottom: 1px solid #cdcdcd;
+            }
+            
+            nav p, nav li {
+                display: inline-block;
+                padding-right: 10px;
+            }
+
+            nav p {
+                font-weight: 700;
+            }
+
+            article {
+                grid-column: span 2;
+            }
+        }
+
+        @media (max-width: 830px) {
+            aside {
+                grid-column: span 3;
+                border-left: 0;
+                border-top: 1px solid #cdcdcd;
+            }
+
+            article {
+                grid-column: span 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>Everything about cars</h1>
+        </header>
+        <nav>
+            <p>Categories</p>
+            <li>New Cars</li>
+            <li>News</li>
+            <li>Features</li>
+            <li>Gear</li>
+            <li>Newsletter</li>
+            <li>Shopping advice</li>
+        </nav>
+        <article>
+            <div class="main-text">The Best 3 sedans in the United States</div>
+            <img src="./images/acure.jpg" alt="Red color Acura TLX driving on the road"/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta modi voluptatibus deleniti asperiores aut illo! Repellendus voluptates obcaecati tempore a ipsum! Officiis natus 
+            molestias aliquid harum culpa consequuntur dolorem id, similique fuga est ducimus ex pariatur officia tempore autem labore laborum quia eius itaque. Recusandae earum architecto in 
+            ullam fugiat?</p>
+            <img src="./images/mercedes.jpg"/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta modi voluptatibus deleniti asperiores aut illo! Repellendus voluptates obcaecati tempore a ipsum! Officiis natus 
+            molestias aliquid harum culpa consequuntur dolorem id, similique fuga est ducimus ex pariatur officia tempore autem labore laborum quia eius itaque. Recusandae earum architecto in 
+            ullam fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aut deserunt placeat fuga facilis ullam ipsam cumque quas voluptate, deleniti alias tenetur excepturi, voluptates corporis reiciendis aliquid, facere nemo voluptatum cupiditate dolorem sapiente quisquam animi! Id rerum exercitationem tempore molestiae, suscipit numquam distinctio alias reiciendis beatae impedit iusto amet tempora, cupiditate quam, debitis corporis! Fuga accusantium aspernatur molestiae tenetur tempora.</p>
+            <img src="./images/audi.jpeg"/>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet repudiandae nesciunt ab sit nihil, beatae consequatur eos, velit recusandae veniam exercitationem distinctio 
+            provident praesentium, laboriosam earum architecto incidunt aperiam! Earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum velit nisi assumenda blanditiis, 
+            doloribus molestias consequuntur unde. Placeat minima adipisci rerum obcaecati quia tempora distinctio molestias ullam consectetur non.</p>
+        </article>
+        <aside>
+            <p>
+                <strong>Published on:</strong> 
+                <br/>
+                January 23rd 2024
+            </p>
+            <p>
+                <strong>In the category:</strong> 
+                <br/>
+                Artciles
+            </p>
+            <p>
+                <strong>Written by:</strong> 
+                <br/>
+                James Frank
+            </p>
+        </aside>
+        <footer>
+            <p>All rights reserved ©.</p>
+        </footer>
+    </div>
+</body>
+</html>
